@@ -1,6 +1,6 @@
 all: serial
 
-CMAKE_FLAGS := -DCMAKE_INSTALL_PREFIX=/tmp/usr/local
+CMAKE_FLAGS := -DCMAKE_INSTALL_PREFIX=/opt/ros/${ROS_DISTRO} -DCMAKE_BUILD_TYPE=Release
 UNAME := $(shell uname -s)
 
 install_deps:
